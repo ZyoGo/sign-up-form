@@ -1,8 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-font-family: 'Poppins',
-sans-serif;
+$color-red: hsl(0,
+100%,
+74%);
+$color-green: hsl(154,
+59%,
+51%);
+$color-darkBlue: hsl(249,
+10%,
+26%);
+$color-blue: hsl(248,
+32%,
+49%);
+$color-grayishBlue: hsl(246,
+25%,
+77%);
 body {
     padding: 0;
     margin: 0;
-    box
+    box-sizing: border-box;
+    font-size: 16px;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: $color-red;
+}
+
+.main-container {
+    display: flex;
+    background-color: #11C5C6;
+    border: 2px solid black;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    padding: auto;
+    .left-container {
+        background-color: #FBDD1C;
+        flex-grow: 1;
+        border: 2px solid black;
+        margin: 50px;
+    }
+    .form-container {
+        background-color: #FBDD1C;
+        flex-grow: 2;
+        margin: 50px;
+        border: 2px solid black;
+    }
 }
