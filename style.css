@@ -203,6 +203,7 @@ body {
     padding: 0;
     height: 380px;
     padding: 20px 5px;
+    margin-bottom: 50px;
   }
   .main-container .form-container form input {
     -ms-flex-item-align: center;
