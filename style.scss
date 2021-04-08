@@ -50,20 +50,18 @@ body {
         display: flex;
         flex-direction: column;
         flex-grow: 2;
-        margin: auto auto auto 100px;
-        // border: 2px solid black;
+        margin: auto auto auto 200px;
         padding: 20px;
         color: white;
         h2 {
             font-family: $f-poppins;
             font-weight: 700;
             font-size: 3rem;
-            margin-left: 100px;
         }
         p {
             font-family: $f-poppins;
             font-weight: 500;
-            margin-left: 100px;
+            line-height: 1.5;
         }
     }
     .form-container {
@@ -72,20 +70,17 @@ body {
         flex-grow: 1;
         margin: auto 250px auto 20px;
         padding: 20px 50px;
-        // border: 2px solid black;
         p {
             margin-bottom: 20px;
-            // border: 2px solid black;
-            display: flex;
-            justify-content: center;
             background-color: $color-blue;
+            text-align: center;
             border-radius: 15px;
             box-shadow: 0 6px hsla(249, 10%, 26%, 0.4);
             padding: 20px;
             width: 440px;
             color: white;
             font-family: $f-poppins;
-            strong {
+            span {
                 font-weight: 700;
             }
         }
@@ -112,13 +107,72 @@ body {
                 font-family: $f-poppins;
             }
             span {
-                display: flex;
-                justify-content: center;
                 margin-top: 20px;
                 color: $color-grayishBlue;
                 font-size: 12px;
+                text-align: center;
                 strong {
                     color: $color-red;
+                }
+            }
+        }
+    }
+}
+
+//media Query
+@media screen and (max-width: 480px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto auto auto;
+        width: 100vw;
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            h2 {
+                font-size: 2.3rem;
+                margin-bottom: 20px;
+            }
+            p {
+                padding: 20px;
+            }
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            p {
+                width: 300px;
+                align-self: center;
+                text-align: center;
+                margin-bottom: 25px;
+                span {
+                    white-space: nowrap;
+                }
+            }
+            form {
+                width: 90vw;
+                align-self: center;
+                padding: 0;
+                height: 380px;
+                padding: 20px 5px;
+                input {
+                    align-self: center;
+                    width: 70vw;
+                }
+                input[type=button] {
+                    width: 82vw;
+                    align-self: center;
+                }
+                span {
+                    align-self: center;
+                    width: 59vw;
                 }
             }
         }
